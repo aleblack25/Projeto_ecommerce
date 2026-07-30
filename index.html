@@ -1,15 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css/globla.css" />
-    <title>Emcommerce</title>
+    <link rel="stylesheet" href="./style.css/global.css" />
+    <title>E-commerce</title>
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar show-menu">
       <div class="header-inner-container">
-
         <h1 class="logo">BLUE <span>STORE</span></h1>
 
         <nav>
@@ -21,34 +20,40 @@
             <li><a>Conta</a></li>
           </ul>
         </nav>
-
       </div>
 
-        <div class="nav-icons-container">
+      <div class="nav-icons-container">
         <img src="./assets/cart.png" alt="cart" />
-        <img src="./assets/menu.png" class="menu-button" alt="menu" />
-       </div>
-
+        <img src="./assets/menu.png" class="menu-buttom" alt="menu" />
+      </div>
     </div>
-    <header> 
-        <div class="header-inner-content">
-            <div class="header-botton-side">
-                <div class="header-botton-side-left">
-                    <h2>De Um Novo Estilo a Seu Trabalho</h2>
-                    <p>
-                        Nçao foque em fazer sempor o maximo, mas sim fazer no mímino 1% TODO DIA! 
-                        CONSTÂNCIA MÍNIMA SEMPRE
-                    </p>
-                    <button>Ver Agora &#8594;</button>
-                </div>
+    <header>
+      <div class="header-inner-content">
+        <div class="header-bottom-side">
+          <div class="header-bottom-side-left">
+            <h2>De Um Novo Estilo a Seu Trabalho</h2>
+            <p>
+              Nçao foque em fazer sempor o maximo, mas sim fazer no mímino 1%
+              TODO DIA! CONSTÂNCIA MÍNIMA SEMPRE
+            </p>
+            <button>Ver Agora &#8594;</button>
+          </div>
 
-                <div class="header-botton-side-right">
-                    <img src="./assets/gaming-msi-header.png" alt="header-image" />
-                </div>
-                    
-                
-            </div>
+          <div class="header-bottom-side-right">
+            <img src="./assets/gaming-msi-header.png" alt="header-image" />
+          </div>
         </div>
+      </div>
     </header>
+
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const menuButtom = document.querySelector(".menu-buttom");
+
+      menuButton.addEventListener("click", () => {
+        navbar.classList.toggle("show-menu");
+      });
+    </script>
+
   </body>
 </html>
