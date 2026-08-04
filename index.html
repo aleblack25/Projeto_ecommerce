@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="navbar show-menu">
-      <div class="header-inner-container">
+      <div class="header-inner-content">
         <h1 class="logo">BLUE <span>STORE</span></h1>
 
         <nav>
@@ -20,17 +20,18 @@
             <li><a>Conta</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="nav-icons-container">
-        <img src="./assets/cart.png" alt="cart" />
-        <img src="./assets/menu.png" class="menu-buttom" alt="menu" />
+        <div class="nav-icons-container">
+          <img src="./assets/cart.png" alt="cart" />
+          <img src="./assets/menu.png" class="menu-button" alt="menu" />
+        </div>
+        
       </div>
     </div>
     <header>
       <div class="header-inner-content">
-        <div class="header-bottom-side">
-          <div class="header-bottom-side-left">
+        <div class="header-button-side">
+          <div class="header-button-side-left">
             <h2>De Um Novo Estilo a Seu Trabalho</h2>
             <p>
               Nçao foque em fazer sempor o maximo, mas sim fazer no mímino 1%
@@ -39,7 +40,7 @@
             <button>Ver Agora &#8594;</button>
           </div>
 
-          <div class="header-bottom-side-right">
+          <div class="header-button-side-right">
             <img src="./assets/gaming-msi-header.png" alt="header-image" />
           </div>
         </div>
@@ -48,12 +49,11 @@
 
     <script>
       const navbar = document.querySelector(".navbar");
-      const menuButtom = document.querySelector(".menu-buttom");
+      const menuButton = document.querySelector(".menu-button");
 
       menuButton.addEventListener("click", () => {
         navbar.classList.toggle("show-menu");
       });
     </script>
-
   </body>
 </html>
