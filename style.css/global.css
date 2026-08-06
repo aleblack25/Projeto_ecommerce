@@ -207,10 +207,12 @@ header {
 
 .coluns {
   display: grid;
+  justify-content: space-evenly;
   padding: 4rem 1rem ;
 }
 
 .coluns-3 {
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 3rem;
 }
+
